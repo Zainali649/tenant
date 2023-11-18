@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ request.tenant }} Employees</title>
+    <title>{{ request.tenant }} product</title>
     <style>
         body {
             display: flex;
@@ -14,10 +14,10 @@
     </style>
 </head>
 <body>
-    <h1>{{ request.tenant }} Employees</h1>
+    <h1>{{ request.tenant }}Product</h1>
     <ul>
-        {% for employee in employees %}
-        <li>{{ employee.name }}</li>
+        {% for product in product %}
+        <li>{{ product.name }}</li>
         {% endfor %}
     </ul>
 

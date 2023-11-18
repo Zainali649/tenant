@@ -21,9 +21,9 @@
         {% endfor %}
     </ul>
 
-    <form method="POST" action="/create_employee">
+    <form method="POST" action="/create_product">
         {% csrf_token %}
-        <input type="text" name="name" placeholder="Add new employee" />
+        <input type="text" name="name" placeholder="Add new product" />
         <button>Submit</button>
     </form>
 </body>
